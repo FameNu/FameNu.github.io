@@ -1,0 +1,37 @@
+/* Back Button Style */
+.button {
+    margin: 1em 0 .5em 1em;
+    font-size: 1.5em;
+}
+.button a:link, .button a:visited, .button a:focus {
+    color: #1D1CE5;
+}
+.button a:hover, .button a:active {
+    color: #8D9EFF;
+}
+
+/* Diary Column */
+.diary {
+    margin: 2em;
+    padding: 1em;
+    background-color: #a7d6fc;
+    border: 3.5px dashed #1D1CE5;
+    border-radius: .6em;
+}
+.diary h1 {
+    margin-left: 0;
+}
+.diary p {
+    line-height: 2em;
+}
+
+@media screen and (max-width:750px) {
+    /* tabspace class only in this style */
+    .tabspace {
+        padding-left: 3em;
+    }
+    .diary {
+        margin: 1em;
+        padding: .6em;
+    }
+}

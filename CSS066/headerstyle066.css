@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.header {
+    border-bottom: 5px solid #8D72E1;
+    padding-top: 0;
+    padding-bottom: .8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/cloud.gif) no-repeat center center;
+    background-size: cover;
+}
+.header div {
+    margin: 1em 1em;
+    display: block;
+}
+.logo a {
+    font-family: 'Courgette', cursive;
+    font-size: 44px;
+    color: #8D9EFF;
+    text-shadow: 1.8px 2px 0 #8D72E1, -1.8px 2px 0 #8D72E1, 1.8px -2px 0 #8D72E1, -1.8px -2px 0 #8D72E1;
+}
+.logo a:hover, .logo a:active {
+    color: #8D72E1;
+    text-shadow: 3px 3px 0 #8D9EFF;
+}
+a.mydata {
+    border: 3px solid #6C4AB6;
+    border-radius: .4em;
+    padding: .5em;
+    color: #070D59;
+    background-color: #a7d6fc;
+}
+.header a:hover.mydata, .header a:active.mydata {
+    background-color: #8D72E1;
+    color: #afdafd;
+}
+
+@media screen and (min-width: 580px){
+    .header {
+        padding-bottom: 0;
+    }
+    .header div {
+        float: right;
+    }
+    .header div.logo {
+        float: left;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 700px){
+    .header {
+        background: none;
+    }
+}

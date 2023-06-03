@@ -1,0 +1,107 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 5px solid #8D72E1;
+}
+
+/* List Sort by style */
+.box1 {
+    flex: .2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(../Images/street.gif) no-repeat ;
+}
+.box1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.box1 ul li {
+    margin: 0 .3em;
+    padding: .15em;
+    background-color: #a7d6fc;
+    border: 3px solid #6C4AB6;
+    border-radius: .4em;
+    margin-top: .3em;
+    margin-bottom: .2em;
+    list-style: none;
+    text-align: center;
+    width: 3em;
+}
+li:hover{
+    color: #8D9EFF;
+}
+.box1 img {
+    width: 120px;
+    margin: 0 2em;
+}
+
+/* Box diary style */
+.box2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1em;
+    border-top: 5px solid #8D72E1;
+}
+.box2 a:hover, .box2 a:active {
+    color: #CEDDEF;
+    background-color: #8D9EFF;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+.mini {
+    border: 2px dashed #1D1CE5;
+    border-radius: .7em;
+    margin-top: 0;
+    margin-bottom: .9em;
+    padding: .8em;
+    background-color: rgba(167, 214, 252, .9);
+}
+.mini > p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width:700px){
+    .content {
+        flex-direction: row;
+    }
+
+    /* List Sort by style */
+    .box1 {
+        line-height: 1em;
+        flex: .2 0;
+        background-size: cover;
+    }
+    .box1 ul {
+        flex-direction: column;
+        padding-left: 2em;
+        margin: 1em;
+        border: 2px dashed #1D1CE5;
+        border-radius: .8em;
+        background-color: rgba(167, 214, 252, .8);
+    }
+    .box1 ul li {
+        border: none;
+        background: none;
+        list-style: initial;
+        text-align: left;
+    }
+    .box1 img {
+        margin: 1em 2em 0 2em;
+        width: 180px;
+        
+    }
+
+    /* Box diary style */
+    .box2 {
+        border: none;
+        border-left: 5px solid #8D72E1;
+        background: url(../Images/cloud.gif) no-repeat center;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,72 @@
+.contact {
+    padding: 0;
+}
+.contact > h1 {
+    text-align: center;
+}
+.contact ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+}
+.contact ul li {
+    margin: .5em 1em 0 1em;
+}
+.contact a > img:hover {
+    opacity: .5;
+}
+
+/* image pop-up style */
+.contact span {
+    position: absolute;
+    display: none;
+}
+.contact span img {
+    border: 2px solid black;
+    border-radius: 1em;
+}
+.contact > img {
+    display: none;
+    position: absolute;
+    bottom: 1em;
+    right: 6px;
+    display: none;
+}
+#FB, #IG, #GIT {
+    background-color: white;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+#FB {
+    border-radius: 80px;
+}
+#IG {
+    border-radius: 75px;
+}
+#GIT {
+    border-radius: 90px;
+}
+
+@media screen and (min-width: 800px) {
+    .contact ul {
+        flex-direction: row;
+        margin: 0 .5em 0 .5em;
+    }
+    .contact a:hover, .contact a:hover span {
+        display: block;
+        top: 48%;
+        left: 35%;
+    }
+    .contact > img {
+        display: block;
+        margin-right: 2em;
+    }
+    #FB, #IG, #GIT {
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,105 @@
+.content {
+    margin: 1em;
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* part picture */
+.pic {
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+}
+.pic img {
+    border: 1px dashed black;
+    border-radius: 1em;
+    background-color: #a7d6fc;
+    margin: 1.5em .5em;
+    width: 150px;
+    height: 150px;
+}
+
+/* about me column */
+.acolumn ul, .acolumn li, .acolumn p {
+    line-height: 1.5em;
+    margin: .3em 0;
+}
+
+/* hide cat and cloud image when in size smaller then 1205px */
+#sam, #WB {
+    display: none;
+}
+
+/* media for different size screen */
+/* Phone */
+@media screen and (min-width:360px){
+    .text {
+        margin-left: .6em;
+    }
+}
+/* Tablet */
+@media screen and (min-width:750px){
+    /* part picture */ 
+    .pic {
+        margin-left: 5em;
+        margin-right: 3em;
+    }
+    .pic img {
+        width: 250px;
+        height: 250px;
+    }
+    .text {
+        margin-left: 4em;
+        margin-top: 1.5em;
+    }
+
+    /* about me column */
+    .acolumn {
+        display: flex;
+        margin: auto 0;
+    }
+    .acolumn p {
+        text-align: right;
+        flex: 2.4;
+        margin-top: 6px;
+        align-self: center;
+    }
+    .acolumn ul {
+        list-style: none;
+        flex: 5;
+        border-left: 5px solid #8D72E1;
+        border-radius: .5em;
+        padding-left: 1em;
+        margin-left: 1em;
+    }
+}
+/* Desktop */
+@media screen and (min-width:1205px){
+    .content {
+        flex-direction: row;
+    }
+
+    /* part picture */
+    .pic {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* picture right page */
+    #sam, #WB {
+        display: inline;
+        position: absolute;
+        height: 20%;
+        right: 5em;
+    }
+    #sam {
+        top: 65%;
+    }
+    #WB {
+        bottom: -5em;
+    }
+}
