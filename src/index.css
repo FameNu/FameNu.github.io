@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nerko+One&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply font-mali text-jordy-blue-950;
+  }
+
+  :root, html, body {
+    @apply overflow-hidden;
+  }
+
+  body, #root {
+    @apply w-screen h-screen;
+    @apply bg-jordy-blue-200;
+  }
+
+  #root {
+    @apply flex justify-center items-center;
+  }
+
+  .card-hover {
+    @apply transition-transform duration-300 ease-in-out;
+    @apply bg-jordy-blue-300;
+    @apply md:hover:card-hovering;
+  }
+
+  .card-hovering {
+    @apply transform scale-105;
+    @apply brightness-95;
+  }
+}
