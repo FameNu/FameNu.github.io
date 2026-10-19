@@ -23,12 +23,18 @@ export default function Education() {
             <h4 className='text-lg font-semibold text-slate-800'>
               {item.degree} in {item.field}
             </h4>
-            <p className='mt-1 text-slate-500'>{item.institution}</p>
             {item.award && (
-              <span className='mt-3 inline-block rounded-full bg-yellow-100 px-3 py-1 text-xs font-bold text-yellow-800'>
+              <span className='inline-block rounded-full bg-yellow-100 px-3 py-1 text-xs font-bold text-yellow-800'>
                 {item.award}
               </span>
             )}
+            <p className='mt-1 text-slate-500'>{item.institution}</p>
+            <p className='mt-1 text-sm text-slate-400'>
+              <i className='fas fa-graduation-cap' />
+              {` `}
+              {item.startDate ? `${item.startDate} - ` : ''}
+              {item.endDate}
+            </p>
           </article>
         ))}
       </div>
