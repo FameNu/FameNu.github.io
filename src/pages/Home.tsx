@@ -1,4 +1,4 @@
-import Education from '../components/Education'
+import AboutMe from '../components/AboutMe'
 import Experience from '../components/Experience'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Education />
+      <AboutMe />
       <Skills />
       <Experience />
       <Projects />
