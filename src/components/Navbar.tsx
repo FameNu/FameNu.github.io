@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useResumeData } from '../services/useResumeData'
 
 const sections = [
   {
@@ -25,6 +26,7 @@ function scrollTo(id: string) {
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { profile } = useResumeData()
 
   const navigateTo = (id: string) => {
     setMenuOpen(false)
@@ -41,7 +43,7 @@ export default function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className='text-xl font-bold tracking-tight text-indigo-600'
         >
-          Phuwamet.
+          {profile.portfolioName ?? 'FameNu'}
         </button>
         <div className='hidden items-center gap-8 md:flex'>
           {sections.map(({ label, id }) => (
