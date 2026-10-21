@@ -1,6 +1,10 @@
 import type { KeyboardEvent } from 'react'
 import { useResumeData } from '../services/useResumeData'
 import SectionHeading from './SectionHeading'
+import {
+  colorWithOpacity,
+  technologiesByName,
+} from '../services/technologyData'
 
 export default function Projects() {
   const { projects } = useResumeData()
@@ -50,9 +54,7 @@ export default function Projects() {
                     : `${project.name}. Public project link unavailable`
                 }
                 onClick={() => handleContactClick(projectUrl)}
-                onKeyDown={(event) =>
-                  handleProjectKeyDown(event, projectUrl)
-                }
+                onKeyDown={(event) => handleProjectKeyDown(event, projectUrl)}
                 className='group cursor-pointer overflow-hidden rounded-xl border border-slate-700 bg-slate-800 text-left transition-colors hover:border-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-400'
               >
                 <div className='relative flex h-48 items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-950 to-slate-700'>
@@ -74,14 +76,29 @@ export default function Projects() {
                     {project.description}
                   </p>
                   <ul className='flex flex-wrap gap-2'>
-                    {project.technologies.map((technology, technologyIndex) => (
-                      <li
-                        key={technology}
-                        className={`rounded-md px-2.5 py-1 text-xs ${technologyIndex % 2 === 0 ? 'bg-indigo-900/40 text-indigo-300' : 'bg-slate-700 text-slate-300'}`}
-                      >
-                        {technology}
-                      </li>
-                    ))}
+                    {project.technologies.map((technologyName) => {
+                      const technology = technologiesByName.get(technologyName)
+
+                      return (
+                        <li
+                          key={technologyName}
+                          className='flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium'
+                          style={
+                            technology
+                              ? {
+                                  color: technology.textColor,
+                                  backgroundColor: colorWithOpacity(
+                                    technology.backgroundColor,
+                                    technology.backgroundOpacity,
+                                  ),
+                                }
+                              : undefined
+                          }
+                        >
+                          {technologyName}
+                        </li>
+                      )
+                    })}
                   </ul>
                   <p className='mt-5 text-sm font-medium text-indigo-300'>
                     {projectUrl ? 'View project ↗' : 'Project link coming soon'}

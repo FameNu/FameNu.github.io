@@ -1,0 +1,186 @@
+[
+  {
+    "name": "React",
+    "icon": { "type": "fontawesome", "value": "fab fa-react" },
+    "iconColor": "#61DAFB",
+    "textColor": "#8BE8FF",
+    "backgroundColor": "#61DAFB",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Next.js",
+    "icon": { "type": "image", "value": "/techstacks/nextjs.png" },
+    "iconColor": "#F8FAFC",
+    "textColor": "#F8FAFC",
+    "backgroundColor": "#64748B",
+    "backgroundOpacity": 0.18
+  },
+  {
+    "name": "Vue.js",
+    "icon": { "type": "fontawesome", "value": "fab fa-vuejs" },
+    "iconColor": "#42B883",
+    "textColor": "#6EE7B7",
+    "backgroundColor": "#42B883",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": { "type": "image", "value": "/techstacks/tailwindcss.png" },
+    "iconColor": "#06B6D4",
+    "textColor": "#67E8F9",
+    "backgroundColor": "#06B6D4",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Material UI",
+    "icon": { "type": "image", "value": "/techstacks/mui.png" },
+    "iconColor": "#007FFF",
+    "textColor": "#7DB7FF",
+    "backgroundColor": "#007FFF",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "TypeScript",
+    "icon": { "type": "image", "value": "/techstacks/typescript.png" },
+    "iconColor": "#3178C6",
+    "textColor": "#93C5FD",
+    "backgroundColor": "#3178C6",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "NestJS",
+    "icon": { "type": "image", "value": "/techstacks/nestjs.png" },
+    "iconColor": "#E0234E",
+    "textColor": "#FDA4AF",
+    "backgroundColor": "#E0234E",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Spring Boot",
+    "icon": { "type": "image", "value": "/techstacks/spring.png" },
+    "iconColor": "#6DB33F",
+    "textColor": "#A3E635",
+    "backgroundColor": "#6DB33F",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Ruby on Rails",
+    "icon": { "type": "image", "value": "/techstacks/rails.png" },
+    "iconColor": "#CC0000",
+    "textColor": "#FDA4AF",
+    "backgroundColor": "#CC0000",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Node.js",
+    "icon": { "type": "image", "value": "/techstacks/nodejs.png" },
+    "iconColor": "#5FA04E",
+    "textColor": "#A3E635",
+    "backgroundColor": "#5FA04E",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Express",
+    "icon": { "type": "image", "value": "/techstacks/express.png" },
+    "iconColor": "#CBD5E1",
+    "textColor": "#E2E8F0",
+    "backgroundColor": "#94A3B8",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Java",
+    "icon": { "type": "fontawesome", "value": "fab fa-java" },
+    "iconColor": "#E76F00",
+    "textColor": "#FDBA74",
+    "backgroundColor": "#E76F00",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "MySQL",
+    "icon": { "type": "image", "value": "/techstacks/mysql.png" },
+    "iconColor": "#00758F",
+    "textColor": "#67E8F9",
+    "backgroundColor": "#00758F",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": { "type": "image", "value": "/techstacks/postgrsql.png" },
+    "iconColor": "#4169E1",
+    "textColor": "#A5B4FC",
+    "backgroundColor": "#4169E1",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "MongoDB",
+    "icon": { "type": "image", "value": "/techstacks/mongodb.png" },
+    "iconColor": "#47A248",
+    "textColor": "#86EFAC",
+    "backgroundColor": "#47A248",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Docker",
+    "icon": { "type": "fontawesome", "value": "fab fa-docker" },
+    "iconColor": "#2496ED",
+    "textColor": "#7DD3FC",
+    "backgroundColor": "#2496ED",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Linux CLI",
+    "icon": { "type": "fontawesome", "value": "fab fa-linux" },
+    "iconColor": "#FCC624",
+    "textColor": "#FDE68A",
+    "backgroundColor": "#FCC624",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "GitHub Actions",
+    "icon": { "type": "image", "value": "/techstacks/githubactions.png" },
+    "iconColor": "#2088FF",
+    "textColor": "#93C5FD",
+    "backgroundColor": "#2088FF",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Playwright",
+    "icon": { "type": "image", "value": "/techstacks/playwright.png" },
+    "iconColor": "#2EAD33",
+    "textColor": "#86EFAC",
+    "backgroundColor": "#2EAD33",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Jest",
+    "icon": { "type": "image", "value": "/techstacks/jest.png" },
+    "iconColor": "#C21325",
+    "textColor": "#FDA4AF",
+    "backgroundColor": "#C21325",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Manual Testing",
+    "icon": { "type": "fontawesome", "value": "fas fa-clipboard-check" },
+    "iconColor": "#818CF8",
+    "textColor": "#A5B4FC",
+    "backgroundColor": "#4F46E5",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "Testing",
+    "icon": { "type": "fontawesome", "value": "fas fa-vial" },
+    "iconColor": "#818CF8",
+    "textColor": "#A5B4FC",
+    "backgroundColor": "#4F46E5",
+    "backgroundOpacity": 0.15
+  },
+  {
+    "name": "UX/UI",
+    "icon": { "type": "fontawesome", "value": "fas fa-pen-ruler" },
+    "iconColor": "#F472B6",
+    "textColor": "#F9A8D4",
+    "backgroundColor": "#DB2777",
+    "backgroundOpacity": 0.15
+  }
+]

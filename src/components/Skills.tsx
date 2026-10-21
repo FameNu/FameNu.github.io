@@ -1,5 +1,7 @@
 import { useResumeData } from '../services/useResumeData'
 import SectionHeading from './SectionHeading'
+import TechnologyIcon from './TechnologyIcon'
+import { technologiesByName } from '../services/technologyData'
 
 const categoryStyles = [
   'bg-blue-50 text-blue-600',
@@ -30,10 +32,24 @@ export default function Skills() {
               <h3 className='mb-4 text-lg font-bold text-slate-800'>
                 {group.category}
               </h3>
-              <ul className='space-y-2 ml-4 text-slate-600 list-disc'>
-                {group.items.map((skill) => (
-                  <li key={skill}>{skill}</li>
-                ))}
+              <ul className='space-y-3 text-slate-700'>
+                {group.items.map((skill) => {
+                  const technology = technologiesByName.get(skill)
+
+                  return (
+                    <li key={skill} className='flex items-center gap-3'>
+                      {technology ? (
+                        <TechnologyIcon technology={technology} />
+                      ) : (
+                        <i
+                          aria-hidden='true'
+                          className='fas fa-code flex h-8 w-8 shrink-0 items-center justify-center text-xl text-slate-400'
+                        />
+                      )}
+                      <span className='text-sm font-medium'>{skill}</span>
+                    </li>
+                  )
+                })}
               </ul>
             </article>
           ))}
