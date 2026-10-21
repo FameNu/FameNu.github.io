@@ -15,7 +15,7 @@ export default function TechnologyIcon({
         src={technology.icon.value}
         alt={technology.name}
         aria-hidden='true'
-        className={`${className} w-6 mx-1 shrink-0 object-contain`}
+        className={`${className} p-1 shrink-0 object-contain`}
         loading='lazy'
       />
     )
