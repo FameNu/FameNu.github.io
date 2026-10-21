@@ -1,4 +1,5 @@
 import { useResumeData } from '../services/useResumeData'
+import socialMedia from '../data/socialMedia.json'
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -6,6 +7,7 @@ function scrollTo(id: string) {
 
 export default function Hero() {
   const { profile } = useResumeData()
+  const githubUrl = socialMedia.find((social) => social.name === 'github')?.linkURL
 
   return (
     <section
@@ -28,23 +30,24 @@ export default function Hero() {
         >
           Contact Me
         </button>
-        <a
-          href={
-            profile.links.find((link) => link.label === 'GitHub')?.url ??
-            'https://github.com/FameNu'
-          }
-          target='_blank'
-          rel='noreferrer'
-          className='flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-8 py-3 font-medium text-slate-700 transition-colors hover:bg-slate-50'
-        >
-          <img
-            src='/github.svg'
-            alt=''
-            aria-hidden='true'
-            className='h-5 w-5'
-          />
-          GitHub <span aria-hidden='true'>↗</span>
-        </a>
+        {
+          githubUrl && (
+            <a
+              href={githubUrl}
+              target='_blank'
+              rel='noreferrer'
+              className='flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-8 py-3 font-medium text-slate-700 transition-colors hover:bg-slate-50'
+            >
+              <img
+                src='/github.svg'
+                alt=''
+                aria-hidden='true'
+                className='h-5 w-5'
+              />
+              GitHub <span aria-hidden='true'>↗</span>
+            </a>
+          )
+        }
       </div>
     </section>
   )
