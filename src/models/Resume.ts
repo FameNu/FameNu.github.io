@@ -10,12 +10,6 @@ export interface ResumeProfile {
   summary: string
   about: string[]
   availability?: string
-  links: ResumeLink[]
-}
-
-export interface ResumeLink {
-  label: string
-  url: string
 }
 
 export interface ExperienceItem {
