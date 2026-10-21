@@ -20,7 +20,7 @@ export default function Hero() {
       <h1 className='mb-4 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl'>
         {profile.name}
       </h1>
-      <p className='mb-10 max-w-2xl text-lg font-light leading-8 text-slate-600 sm:text-xl'>
+      <p className='mb-10 max-w-3xl text-lg font-light leading-8 text-slate-600 sm:text-xl'>
         {profile.intro}
       </p>
       <div className='flex w-full flex-col justify-center gap-4 sm:w-auto sm:flex-row'>
