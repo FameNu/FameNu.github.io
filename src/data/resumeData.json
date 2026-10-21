@@ -1,0 +1,121 @@
+{
+  "profile": {
+    "portfolioName": "FamePhuwamet",
+    "name": "Phuwamet Panjachalermrat",
+    "nickname": "Fame",
+    "nativeName": "ภูวเมศฐ์ ปัญจเฉลิมรัตน์",
+    "title": "Software Developer",
+    "location": "Thailand",
+    "email": "phuwamet.fame@gmail.com",
+    "intro": "Building robust, scalable applications from frontend to backend.",
+    "summary": "Recent B.Sc. IT graduate with hands-on experience developing end-to-end web applications. Accustomed to Agile environments, I specialize in translating UX/UI designs into working software and ensuring system reliability through comprehensive testing.",
+    "about": [
+      "I am a recent B.Sc. IT graduate from KMUTT with hands-on experience developing end-to-end web applications. Proficient in TypeScript, Next.js, Java, and Spring Boot, with a solid foundation in SQL/NoSQL databases and Docker.",
+      "Accustomed to Agile environments, I enjoy translating UX/UI designs and business requirements into working software, and I ensure system reliability through comprehensive manual and automated testing."
+    ],
+    "availability": "Open to opportunities"
+  },
+  "experience": [
+    {
+      "role": "Software Developer Intern",
+      "organization": "ODD-E Thailand",
+      "type": "Internship",
+      "startDate": "Jan 2025",
+      "endDate": "Aug 2025",
+      "description": "Contributed to the design, development, and testing of a web application, focusing on user-centric interfaces and reliable software performance.",
+      "highlights": [
+        "Conducted UX/UI research and designed intuitive interfaces to enhance the overall user experience.",
+        "Developed web application features and backend logic using Ruby on Rails and PostgreSQL.",
+        "Designed comprehensive test scenarios and executed both manual and automated tests to ensure software quality and minimize bugs."
+      ],
+      "technologies": [
+        "Ruby on Rails",
+        "PostgreSQL",
+        "Docker",
+        "Testing",
+        "UX/UI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "King Mongkut’s University of Technology Thonburi",
+      "degree": "B.Sc.",
+      "field": "Information Technology",
+      "startDate": "August 2022",
+      "endDate": "June 2026",
+      "award": "Second-Class Honors"
+    },
+    {
+      "institution": "Science-Based Technology Vocational College (Chonburi)",
+      "degree": "Voc. Cert.",
+      "field": "Specialization Electronics Technology",
+      "startDate": "May 2019",
+      "endDate": "March 2022"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "icon": "fa-desktop",
+      "items": [
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Tailwind CSS",
+        "Material UI",
+        "TypeScript"
+      ]
+    },
+    {
+      "category": "Backend",
+      "icon": "fa-server",
+      "items": [
+        "NestJS",
+        "Spring Boot",
+        "Ruby on Rails",
+        "Node.js",
+        "Express",
+        "Java"
+      ]
+    },
+    {
+      "category": "Database & DevOps",
+      "icon": "fa-database",
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Docker",
+        "Linux CLI",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "category": "Testing",
+      "icon": "fa-vial",
+      "items": ["Playwright", "Jest", "Manual Testing"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "PloiKhong (Capstone Project Platform)",
+      "visualTitle": "PloiKhong",
+      "description": "A full-stack platform for students to present real-life challenges, as well as share, evaluate, and collaborate on project ideas.",
+      "technologies": [
+        "Next.js",
+        "NestJS",
+        "MongoDB",
+        "Docker",
+        "Playwright",
+        "Jest"
+      ],
+      "highlights": [
+        "Translated UX/UI designs into responsive web interfaces using Next.js, TypeScript, and Material UI.",
+        "Built reusable UI components to maintain consistent layouts and improve development speed.",
+        "Integrated frontend features with backend APIs to ensure seamless data flow.",
+        "Designed test cases for manual testing and test scripts for automated testing."
+      ]
+    }
+  ]
+}
