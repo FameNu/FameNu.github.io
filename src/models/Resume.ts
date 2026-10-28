@@ -48,6 +48,8 @@ export interface ProjectItem {
   repository?: string
   technologies: string[]
   highlights: string[]
+  imghref?: string
+  imgAlt?: string
 }
 
 export interface ResumeData {

@@ -116,6 +116,21 @@
         "Integrated frontend features with backend APIs to ensure seamless data flow.",
         "Designed test cases for manual testing and test scripts for automated testing."
       ]
+    },
+    {
+      "name": "Ball Sorting Solver",
+      "visualTitle": "Ball Sorting Solver",
+      "description": "A puzzle solver that lets users build and edit ball sorting boards, then finds a valid solution using breadth-first search.",
+      "technologies": ["React", "TypeScript", "Tailwind CSS"],
+      "url": "https://famenu.github.io/ball-sorting-solver/",
+      "repository": "https://github.com/FameNu/ball-sorting-solver",
+      "imghref": "/img/projects/ball-sorting-solver.png",
+      "imgAlt": "Ball Sorting Solver",
+      "highlights": [
+        "Built an interactive board editor with configurable tube counts, capacities, and custom colors.",
+        "Implemented a breadth-first search solver that finds valid sequences of moves.",
+        "Added step-by-step solution display and support for gravity-based tube editing."
+      ]
     }
   ]
 }

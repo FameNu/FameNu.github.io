@@ -58,13 +58,23 @@ export default function Projects() {
                 className='group cursor-pointer overflow-hidden rounded-xl border border-slate-700 bg-slate-800 text-left transition-colors hover:border-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-400'
               >
                 <div className='relative flex h-48 items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-950 to-slate-700'>
-                  <span
-                    aria-hidden='true'
-                    className='absolute text-7xl opacity-20 transition-transform duration-500 group-hover:scale-110'
+                  {project.imghref ? (
+                    <img
+                      src={project.imghref}
+                      alt={project.imgAlt || project.name}
+                      className='absolute inset-0 h-full w-full object-cover'
+                    />
+                  ) : (
+                    <span
+                      aria-hidden='true'
+                      className='absolute text-7xl opacity-20 transition-transform duration-500 group-hover:scale-110'
+                    >
+                      ✦
+                    </span>
+                  )}
+                  <h3
+                    className={`relative z-10 px-4 text-center text-2xl font-bold text-white/90 ${project.imghref ? 'bg-white/10 rounded-full' : ''}`}
                   >
-                    ✦
-                  </span>
-                  <h3 className='relative z-10 px-4 text-center text-2xl font-bold text-white/90'>
                     {project.visualTitle ?? project.name}
                   </h3>
                 </div>
